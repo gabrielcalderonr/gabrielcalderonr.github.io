@@ -1,0 +1,58 @@
+header {
+    margin: 15px auto;
+    padding: 15px;
+    max-width: 850px;
+    background-color:#3575D3;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 20px;
+  }
+
+ 
+
+  nav li {
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+ 
+  h2 {
+    border-bottom: 1px solid #bbb;
+  }
+
+  nav a {
+    color: #033e53;
+    text-decoration: none;
+  }
+  
+
+  
+
+  header img {
+  width: 200px;
+  height: auto;
+  float: right;
+  }
+
+  main {
+    margin: 1.25rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  footer {
+    margin: 1.25rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    text-align: center;
+    background-color:#3575D3;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+  }
+
+  .copyright a {
+    color: #93b7be;
+  }
