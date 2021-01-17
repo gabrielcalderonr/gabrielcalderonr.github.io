@@ -19,30 +19,6 @@ header img {
   transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 1050px) {
-  header img {
-    position: absolute;
-    width: 80px;
-    left: 10px;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  header img {
-    display: none;
-  }
-}
-
-
-
-@media only screen and (max-width: 500px) {
-  header h1 {
-    font-size: 2em;
-  }
-  header p {
-    font-size: 1em;
-  }
-}
 
 header p {
   color: #aaa;
@@ -63,14 +39,6 @@ header p {
     width: 70%;
   }
 }
-
-@media only screen and (max-width: 800px) {
-  .content-container {
-    width: 100%;
-  }
-}
-
-
 
 nav ul {
   margin: 0;
@@ -139,6 +107,7 @@ main h2 {
   
   font-family: "Open Sans", sans-serif;
   padding: 5px;
+  text-align: center;
 
 }
 
@@ -160,16 +129,6 @@ footer {
   font-family: "Open Sans", sans-serif;
 }
 
-
-@media only screen and (max-width: 1000px) {
-  nav ul li {
-    display: none;
-  }
-  nav ul li:first-child {
-    display: block;
-    padding: 3px;
-  }
-  nav ul li:first-child a:hover {
-    border: none;
-  }
+hr {
+  color: white;
 }

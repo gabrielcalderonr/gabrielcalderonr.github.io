@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1000px) {
+    nav ul li {
+      display: none;
+    }
+    nav ul li:first-child {
+      display: block;
+      padding: 3px;
+    }
+    nav ul li:first-child a:hover {
+      border: none;
+    }
+  }
