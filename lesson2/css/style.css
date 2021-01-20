@@ -14,7 +14,7 @@ header {
   body {
     
     font-family: "Open Sans", sans-serif;
-    max-width: 1200px;
+    
    position: relative;
     margin: auto;
    
@@ -137,5 +137,5 @@ section {
     
     li a:hover {
       background-color: #3575D3;
-}
+    }
 }
