@@ -99,7 +99,7 @@ nav ul a {
 main {
   background-color: #cacaca;
   padding: 20px 0px;
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
@@ -132,3 +132,100 @@ footer {
 hr {
   color: white;
 }
+
+div.news {
+  width: 50%;
+  margin: 20px auto;
+  padding: 15px;
+}
+
+div.news img.right {
+  float: right;
+  margin-right: 15px;
+  margin-top: -120px;
+}
+
+
+div.reset {
+  clear: both;
+}
+
+.customTable {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #FF4E00;
+  border-style: solid;
+  color: #000000;
+}
+
+.customTable td, .customTable th {
+  border-width: 2px;
+  border-color: #FF4E00;
+  border-style: solid;
+  padding: 5px;
+  align-content: center;
+
+}
+.customTable th {
+  background-color: #FF4E00;
+    color: white;
+    text-align: center;
+}
+
+customTable thead {
+  background-color: #FF4E00;
+}
+
+.navigation ul li.active a, .navigation ul li a:hover {
+  text-decoration:none;
+  color:#fff;
+  
+}
+
+.weather {
+  position: absolute;
+    top: 300px;
+    
+    background: radial-gradient(#eee, #4567aa);
+	border: 1px solid #000;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #111;
+	opacity: .8;
+}
+
+.climateimgs {
+  width: 80% ;
+  align-items: center;
+
+}
+
+.banner {
+  float: none;
+  padding: 10px;
+
+}
+
+.responsive li {
+	display: block;
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+  }
+  
+  .herodiv {margin: 10px auto}
+h1, h2, p {margin: 0;}
