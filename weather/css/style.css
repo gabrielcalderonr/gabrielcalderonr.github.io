@@ -229,3 +229,18 @@ customTable thead {
   
   .herodiv {margin: 10px auto}
 h1, h2, p {margin: 0;}
+
+picture {
+  margin: 1em 1em 1em 1em;
+  padding: .5em;
+  width: 400px;
+}
+picture img[data-src] {
+  filter: blur(0.2em);
+}
+
+picture img {
+  filter: blur(0em);
+  transition: filter 2.6s;
+  padding: 5px;
+}
