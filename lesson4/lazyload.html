@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lazy load</title>
+        
+       
+        <link rel="stylesheet" href="/lesson4/css/style.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+    
+        
+
+
+    </head>
+    <body>
+        <header>
+            
+            <h1>Lazy Load</h1>
+                </header>
+        <main> 
+        <div class="container">
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/one.jpg" alt="view">
+            </picture>
+            <picture> 
+                <img src="images/placeholder.jpg" data-src="images/two.jpg" alt="forest">
+              </picture>
+            <picture> 
+                <img src="images/placeholder.jpg" data-src="images/three.jpg" alt="clouds">
+              </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/four.jpg" alt="bird">
+              </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/five.jpg" alt="mountain">
+              </picture>
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/six.jpg" alt="tree">
+              </picture>
+          </div>
+        </main> 
+        <footer>
+            <p id="p1">&copy; <span id="currentyear"></span> | Gabriel Calderon | Quito, Ecuador | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p id="p2">Last Updated: <span id="time"></span></p>
+           
+        </footer>
+        <script src="/lesson4/js/lazyload.js"></script>
+          <script src="/lastdate.js"></script>
+         
+      </body>
+</html>
