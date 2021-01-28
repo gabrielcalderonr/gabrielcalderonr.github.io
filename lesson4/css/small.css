@@ -1,0 +1,12 @@
+@media (min-width: 300px){
+    header {
+        margin: 15px auto;
+        padding: 15px;
+        
+        background-color:#3575D3;
+        text-align: center;
+        color: #ffffff;
+        font-family: "Arial";
+        font-size: 20px;
+      }
+}

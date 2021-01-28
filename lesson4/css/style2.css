@@ -1,0 +1,272 @@
+header {
+    background-color: #3575D3;
+    text-align: center;
+    position: relative;
+    padding: 30px;
+  }
+  header h1 {
+    margin: 0px;
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 4em;
+  }
+  
+  header img {
+    position: absolute;
+    width: 100px;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  header p {
+    color: #aaa;
+    margin: 0px;
+    font-size: 1.25em;
+    padding: 10px;
+     font-family: "Open Sans", sans-serif;
+  }
+  
+  .content-container {
+    margin: 0 auto;
+    width: 70%;
+  
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .content-container {
+      width: 70%;
+    }
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 3px;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+  }
+  nav {
+    background-color: #033e53;
+  }
+  @media only screen and (max-width: 1000px) {
+    nav ul {
+      flex-direction: column;
+    }
+  }
+  
+  nav ul li {
+    margin: 0;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav ul li:first-child {
+    display: none;
+  }
+  nav a {
+    color: #033e53;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+  }
+  h3 {
+    font-family: "Open Sans", sans-serif;
+  color: white;
+  }
+  
+  .close-menu {
+    float: none;
+  }
+  
+  .show-menu {
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+  nav ul a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  
+  
+  main {
+    background-color: #cacaca;
+    padding: 20px 0px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  main h2 {
+    
+    font-family: "Open Sans", sans-serif;
+    padding: 5px;
+    text-align: center;
+  
+  }
+  
+  main p {
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+  }
+  
+  main section {
+    background-color: rgb(226, 226, 226);
+    margin: 0px 20px;
+  }
+  
+  footer {
+    padding: 30px 0px;
+    background-color: #3575D3;
+    text-align: center;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  hr {
+    color: white;
+  }
+  
+  div.news {
+    width: 50%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+  
+  div.news img.right {
+    float: right;
+    margin-right: 15px;
+    margin-top: -120px;
+  }
+  
+  
+  div.reset {
+    clear: both;
+  }
+  
+  .customTable {
+    width: 100%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #FF4E00;
+    border-style: solid;
+    color: #000000;
+  }
+  
+  .customTable td, .customTable th {
+    border-width: 2px;
+    border-color: #FF4E00;
+    border-style: solid;
+    padding: 5px;
+    align-content: center;
+  
+  }
+  .customTable th {
+    background-color: #FF4E00;
+      color: white;
+      text-align: center;
+  }
+  
+  customTable thead {
+    background-color: #FF4E00;
+  }
+  
+  .navigation ul li.active a, .navigation ul li a:hover {
+    text-decoration:none;
+    color:#fff;
+    
+  }
+  
+  .weather {
+    position: absolute;
+      top: 300px;
+      
+      background: radial-gradient(#eee, #4567aa);
+      border: 1px solid #000;
+      padding: 1.5rem;
+      box-shadow: 0 0 30px #111;
+      opacity: .8;
+  }
+  
+  .climateimgs {
+    width: 80% ;
+    align-items: center;
+  
+  }
+  
+  .banner {
+    float: none;
+    padding: 10px;
+  
+  }
+  
+  .responsive li {
+      display: block;
+  }
+  
+  /* Media Query for medium+ views */
+  @media only screen and (min-width: 32.5em) {
+      .navigation {
+          display: flex;
+      }
+      .navigation li {
+          display: block; /* change state in small view */
+          flex: 1 1 auto;
+      }
+      .navigation a {
+          text-align: center;
+      }
+      .navigation li:first-child {
+          display: none;
+    }
+    
+    .herodiv {margin: 10px auto}
+  h1, h2, p {margin: 0;}
+  
+  picture {
+    margin: 1em 1em 1em 1em;
+    padding: .5em;
+    width: 400px;
+  }
+  picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+  picture img {
+    filter: blur(0em);
+    transition: filter 2.6s;
+    padding: 5px;
+  }
+  .weatherpic{
+    max-width: 300px;
+    border: 1px solid #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+
+  }
+
+  img:hover{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    box-shadow: 10px 10px 5px #888888;
+  }
+ 
+  }
