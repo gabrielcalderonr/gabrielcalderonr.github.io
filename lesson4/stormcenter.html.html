@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Goodweather</title>
+        
+       
+        <link rel="stylesheet" href="/weather/css/style.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/weather/css/large.css">
+        <link rel="stylesheet" href="/weather/css/medium.css">
+        <link rel="stylesheet" href="/weather/css/small.css">
+
+
+
+    </head>
+    <body>
+        <div id="content">
+        <header><img src="/lesson2/images/Weather-128.png" style="width: 100px" alt = "logo">
+            <h1>Goodweather</h1>
+            <h3>Your daily weather site!</h3>
+                </header>
+                <nav>
+                    <div class="content-container">
+                        <ul id="nav-menu">
+                            <li><a id="nav-toggle"><img src="/weather/images/menu-icon.png" id="menu-icon" alt="Hamburger menu icon"></a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Preston</a></li>
+                            <li><a href="#">Soda Springs</a></li>
+                            <li><a href="#">Fish Haven</a></li>
+                            <li><a href="#">Storm Center</a></li>
+                            <li><a href="#">Gallery</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        
+        <main>
+            
+            <h2>Storm Center Form</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullName" required pattern="[A-z\s]{5,}"
+                        placeholder="Full Name"></label>
+                <label class="top">eMail:
+                    <input type="email" name="email" required placeholder="user@email.org"></label>
+                <label class="top">Phone number:
+                    <input type="tel" name="phone" required placeholder="###-###-####">
+                </label>
+                <label class="top" for="num">Zip Code:
+                    <input type="number" id="num" name="num" required></label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Storm Date <input type="date" name="date"></label>
+
+                <label class="top">Storm Type
+                    <input type="text" name="stormType" list="stormType">
+                    <datalist id="stormType">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+
+                <label>Storm Severity &nbsp;&nbsp;&nbsp;
+                    <input type="range" name="severity" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span>
+                    <datalist id="tickmarks">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                </label>
+
+
+                <label class="top">Storm Region
+                    <select name="stormRegion">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="Preston">Preston</option>
+                        <option value="Soda Springs">Soda Springs</option>
+                        <option value="Fish Haven">Fish Haven</option>
+                    </select>
+                </label>
+
+                <div>User in-danger level</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Details</legend>
+                <label class="top">Comments<br><textarea name="textArea"></textarea>
+                </label>
+            </fieldset>
+
+            <input type="submit" name="button" value="Report Storm" class="submitBtn">
+        </form>
+     
+
+ </main>
+ 
+    
+        
+        
+        <footer>
+            <p id="p1">&copy;  <span id="currentyear"></span> | Gabriel Calderon | Quito, Ecuador | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p id="p2">Last Updated: <span id="time"></span></p>
+           
+        </footer>
+          <script  src="/lastdate.js"></script>
+          <script  src="/weather/js/ham_menu.js"></script>
+          </div>
+      </body>
+</html>
