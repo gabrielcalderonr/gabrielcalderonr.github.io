@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book of Mormon</title>
+    <link rel="stylesheet" href="/lesson5/css/style.css">
+    
+  </head>
+  <body>
+
+    <h1>📘 Book of Mormon - Top 25</h1>
+    <main>
+    <div class="input">
+        <label for="chapter">Enter Book and Chapter</label>
+        <input id="chapter" type="text"  placeholder="Alma 5">
+        <button type="button">Add Chapter</button>
+    </div>
+      <ul>
+
+    </ul>
+  </main>
+    <script>
+      const list = document.querySelector('ul');
+      const input = document.querySelector('input');
+      const button = document.querySelector('button');
+
+    button.onclick = function() {
+    let myItem = input.value;
+    input.value = '';
+
+        const listItem = document.createElement('li');
+        const listText = document.createElement('span');
+        const listBtn = document.createElement('button');
+
+    listItem.appendChild(listText);
+    listText.textContent = myItem;
+    listItem.appendChild(listBtn);
+    listBtn.textContent = '❌';
+    list.appendChild(listItem);
+
+    listBtn.onclick = function(e) {
+    list.removeChild(listItem);
+        }
+
+        input.focus();
+      }
+    </script>
+  </body>
+</html>
