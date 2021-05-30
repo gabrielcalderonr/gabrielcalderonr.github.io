@@ -88,8 +88,7 @@
       }
       .icon-container{
         display: inline-grid;
-        
-        align-items: left;
+       
       }
       .icon{
         display: grid;
