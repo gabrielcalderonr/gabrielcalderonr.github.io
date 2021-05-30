@@ -1,0 +1,97 @@
+@media only screen and (min-width: 32.5em) {
+    
+    header {
+        justify-content: center;
+
+    }
+
+    .header {
+        margin: 15px auto;
+    padding: 15px;
+    
+    background-color:#3575D3;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Arial";
+    
+    
+    }
+    
+    header p {
+        font-size: 1.3em;
+        margin-left: 20px;
+        /* margin-top: 35px; */
+
+    }
+    
+  
+    .header img {
+        max-width: 10rem;
+  
+        padding:0;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+        border: none;
+    }
+    .summary{
+        position: absolute;
+    top: 400px;
+    left: 380px;
+    background-color: white;
+    opacity: 70%;
+    padding: 15px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        align-items: center;
+      }
+      .grid-f{
+        font-size: 20px;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      .grid-image{
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+      }
+      .grid-header{
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        font-size: 20px;
+      }
+      .box {
+        margin: 10px;
+        padding: 5px;
+      }
+      
+      .box {
+        background: #cacacaca;
+        padding: 25px;
+      }
+      
+      .box > h2, p {
+        margin: 4px;
+        font-size: 90%;
+      }
+      .icon-container{
+        display: inline-grid;
+        
+      }
+      .icon{
+        display: grid;
+      }
+      
+}
