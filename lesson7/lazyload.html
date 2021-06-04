@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Goodweather</title>
+        
+       
+        <link rel="stylesheet" href="/lesson7/style/small.css">
+
+
+
+    </head>
+    <body>
+        <div id="content" >
+        <header> <h1>Lazy load</h1>
+                </header>
+                
+        
+        <main>
+            
+            <picture>
+                <img src="images/placeholder.jpg" data-src="images/one.jpg" alt="one" class="lazy">
+            </picture>
+            <br><picture>
+                <img src="images/placeholder.jpg" data-src="images/two.jpg" alt="Image two" class="lazy">
+            </picture>
+            <br><picture>
+                <img src="images/placeholder.jpg" data-src="images/three.jpg" alt="Image three" class="lazy">
+            </picture>
+            <br><picture>
+                <img src="images/placeholder.jpg" data-src="images/four.jpg" alt="Image four" class="lazy">
+            </picture>
+            <br><picture>
+                <img src="images/placeholder.jpg"  data-src="images/five.jpg" alt="Image Five" class="lazy">
+            </picture>
+            <br><picture>
+                <img src="images/placeholder.jpg" data-src="images/six.jpg" alt="Image six" class="lazy">
+                </picture>
+            
+    
+        </main>
+        
+        <footer>
+            <p id="p1">&copy; <span id="currentyear">2021</span> | Gabriel Calderon | Quito, Ecuador | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+            <p id="p2">Last Updated: <span id="time"></span></p>
+           
+        </footer>
+            <script src="/lesson7/js/lastdate.js"></script>
+            <script src="/lesson7/js/lazy.js"></script>
+           
+          </div>
+      </body>
+</html>
