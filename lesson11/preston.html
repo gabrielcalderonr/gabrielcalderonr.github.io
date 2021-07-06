@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Preston</title>
+    <link  rel="stylesheet" href="/lesson5b/css/small.css">
+    <link  rel="stylesheet" href="/lesson5b/css/large.css">
+    <link  rel="stylesheet" href="/lesson5b/css/medium.css">
+    <link  rel="stylesheet" href="/lesson3/css/normalize.css">
+    
+    
+  </head>
+  <body>
+    
+    <header>
+  
+      <div class="header" >
+      <img class="logo" src="/lesson4/images/Weather-128.png" alt="good weather" width="100">
+      <h1 class="title">The Good Weather</h1> 
+     
+      
+      <p>Your daily weather site!</p>
+        </div><!-- </div> -->
+    </header>
+      <nav> 
+        <ul class="navigation" id="mainmenu">
+            <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
+            <li><a href="/lesson11/index.html" class="nav">Home</a></li>
+            <li><a href="/lesson11/preston.html" class="nav">Preston</a></li>
+            <li><a href="/lesson11/sodasprings.html" class="nav">Soda Springs</a></li>
+            <li><a href="/lesson11/fishheaven.html" class="nav">Fish Haven</a></li>
+            <li><a href="/lesson11/stormcenter.html" class="nav">Storm Center</a></li>
+            <li><a href="/lesson11/gallery.html" class="nav">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Preston Idaho</h2>
+            <div id="firstsection">
+
+                <picture>
+                    <source srcset="/lesson5b/images/pexels-pixabay-large.jpg" media="(min-width: 800px)">
+                    <source srcset="/lesson5b/images/pexels-pixabay-medium.jpg" media="(min-width:480px) and (max-width: 799px)">
+                    <source srcset="/lesson5b/images/pexels-pixabay-medium.jpg" media="(min-width:10px) and (max-width: 479px)">
+                    <img src="/lesson5b/images/pexels-pixabay-small.jpg" alt="Preston Idaho" id="heroimage" class= "heroimage">
+                </picture>
+
+                <div id="overlay" class="summary">
+                    <h3>Weather Summary &#9788;</h3>
+                    <div class="details">
+                     
+                        <div class="label">Currently: Sunny</div>
+                        <div class="value" id="condition"></div>
+                        <div class="label">Current: 80 F</div>
+                        <div class="value" id="temp"></div>
+                        <div class="label">High: 81 F </div>
+                        <div class="value" id="high"></div>
+                        <div class="label">Wind Chill: 20 mh</div>
+                        <div class="value" id="windchill"></div>
+                        <div class="label">Humidity: 69%</div>
+                        <div class="value" id="humidity"></div>
+                        <div class="label">Wind Speed: 5 mph</div>
+                        <div class="value" id="speed"></div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="hide">
+
+            <h3>5 Day Forecast</h3>
+
+
+            <div class="grid-container">
+                <div class="grid-header" id="dayofweek1"></div>
+                <div class="grid-header" id="dayofweek2"></div>
+                <div class="grid-header" id="dayofweek3"></div>
+                <div class="grid-header" id="dayofweek4"></div>
+                <div class="grid-header" id="dayofweek5"></div>
+                <div class="grid-image">
+                    <img src="/lesson5b/images/sunny.jpg" alt="" id="icon1">
+                </div>
+                <div class="grid-image">
+                    <img src="/lesson5b/images/rain.jpg" alt="" id="icon2">
+                </div>
+                <div class="grid-image">
+                    <img src="/lesson5b/images/sunny.jpg" alt="" id="icon3">
+                </div>
+                <div class="grid-image">
+                    <img src="/lesson5b/images/cloud.jpg" alt="" id="icon4">
+                </div>
+                <div class="grid-image">
+                    <img src="/lesson5b/images/sunny.jpg" alt="" id="icon5">
+                </div>
+                <div class="grid-f" id="forecast1">63&deg;F</div>
+                <div class="grid-f" id="forecast2">68&deg;F</div>
+                <div class="grid-f" id="forecast3">67&deg;F</div>
+                <div class="grid-f" id="forecast4">63&deg;F</div>
+                <div class="grid-f" id="forecast5">66&deg;F</div>
+            </div>
+
+        </section>
+
+        <div class="events"></div>
+
+        <section id="article" class="box">
+            <picture>
+                <img src="/lesson5b/images/rain-day.png" alt="Main image" class="imagearticle">
+            </picture>
+            <div>
+                <h3>Climate in Preston</h3>
+                <p>
+                   from Best Places <br>
+                    <br>
+                    Preston, Idaho gets 19 inches of rain, on average, per year. The US average is 38 inches of rain per year.
+
+Preston averages 60 inches of snow per year. The US average is 28 inches of snow per year.
+
+On average, there are 206 sunny days per year in Preston. The US average is 205 sunny days.
+
+Preston gets some kind of precipitation, on average, 99 days per year. Precipitation is rain, snow, sleet, or hail that falls to the ground. In order for precipitation to be counted you have to get at least .01 inches on the ground to measure.                
+                </p>
+            </div>
+        </section>
+
+        <section class="box" id="bottombox">
+
+
+
+            <div id="address">
+                <h4>The Good Weather</h4>
+                <p><img alt="Location Icon" src="/lesson5b/images/location.JPG" class="locationimg" id="location"><br>30 N 1st E <br>
+                    Preston, ID 83263 <br>
+                    555.555.5555 <br>
+                    howsoutside@tws.com <br>
+                </p>
+
+
+                <!--SOCIAL MEDIA ICONS-->
+                <div class="icon-container">
+                    <div class="icon">
+                        <a target="_blank" href="https://www.facebook.com">
+                            <img alt="Facebook Icon" src="/lesson5b/images/facebook-icon.png">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a target="_blank" href="https://www.pinterest.com">
+                            <img alt="Pinterest Icon" src="/lesson5b/images/pinterest-icon.png">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a target="_blank" href="https://www.twitter.com">
+                            <img alt="Twitter Icon" src="/lesson5b/images/twitter-icon.png">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a target="_blank" href="https://instagram.com">
+                            <img alt="Whatsapp Icon" src="/lesson5b/images/instagram-icon.png">
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--END OF SOCIAL MEDIA ICONS-->
+
+            </div>
+
+
+            
+
+        </section>
+
+    </main>
+  
+    <footer>
+    <p id="p1">&copy; <span id="currentyear">2021</span> | Gabriel Calderon | Quito, Ecuador | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
+    <p id="p2">Last Updated: <span id="time"></span></p>
+   
+</footer>
+    <script src="/lesson5b/js/ham_menu.js"></script>
+    <script src="/lesson3/js/lastdate.js"></script>
+  </body>
+</html>
