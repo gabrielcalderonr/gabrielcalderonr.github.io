@@ -161,6 +161,12 @@ padding: 15px;
   
      
 }
-
+.table_forecast {
+    font-family: 'Open Sans';
+  
+  }
+.daystitle {
+    background: #cacaca;
+}
  
 

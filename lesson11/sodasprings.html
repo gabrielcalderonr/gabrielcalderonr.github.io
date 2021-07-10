@@ -50,18 +50,11 @@
                     <h3>Weather Summary &#9788;</h3>
                     <div class="details">
                      
-                        <div class="label">Currently: Sunny</div>
-                        <div class="value" id="condition"></div>
-                        <div class="label">Current: 80 F</div>
-                        <div class="value" id="temp"></div>
-                        <div class="label">High: 81 F </div>
-                        <div class="value" id="high"></div>
-                        <div class="label">Wind Chill: 20 mh</div>
-                        <div class="value" id="windchill"></div>
-                        <div class="label">Humidity: 69%</div>
-                        <div class="value" id="humidity"></div>
-                        <div class="label">Wind Speed: 5 mph</div>
-                        <div class="value" id="speed"></div>
+                        <p>Currently: <span id="temperature"></span>&#8457; & <span id="conditions"></span></p>
+                        <p>High Temp: <span id="high"></span>&#8457;</p>
+                        <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                        <p>Wind Chill: <span id="windChill"></span></p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
                     
                     </div>
                 </div>
@@ -73,34 +66,34 @@
 
             <h3>5 Day Forecast</h3>
 
-
-            <div class="grid-container">
-                <div class="grid-header" id="dayofweek1"></div>
-                <div class="grid-header" id="dayofweek2"></div>
-                <div class="grid-header" id="dayofweek3"></div>
-                <div class="grid-header" id="dayofweek4"></div>
-                <div class="grid-header" id="dayofweek5"></div>
-                <div class="grid-image">
-                    <img src="/lesson5b/images/sunny.jpg" alt="" id="icon1">
-                </div>
-                <div class="grid-image">
-                    <img src="/lesson5b/images/rain.jpg" alt="" id="icon2">
-                </div>
-                <div class="grid-image">
-                    <img src="/lesson5b/images/sunny.jpg" alt="" id="icon3">
-                </div>
-                <div class="grid-image">
-                    <img src="/lesson5b/images/cloud.jpg" alt="" id="icon4">
-                </div>
-                <div class="grid-image">
-                    <img src="/lesson5b/images/sunny.jpg" alt="" id="icon5">
-                </div>
-                <div class="grid-f" id="forecast1">63&deg;F</div>
-                <div class="grid-f" id="forecast2">68&deg;F</div>
-                <div class="grid-f" id="forecast3">67&deg;F</div>
-                <div class="grid-f" id="forecast4">63&deg;F</div>
-                <div class="grid-f" id="forecast5">66&deg;F</div>
-            </div>
+            <div id="forecast">
+                <h3>Five Day Forecast</h3>
+                <table class = "table_forecast">
+            
+                    <tr class="days">
+                        <th class="daystitle"><span id="day1"></span></th>
+                        <th class="daystitle"><span id="day2"></span></th>
+                        <th class="daystitle"><span id="day3"></span></th>
+                        <th class="daystitle"><span id="day4"></span></th>
+                        <th class="daystitle"><span id="day5"></span></th>
+                    </tr>
+                    <tr>
+                        <th><img id="icon1" src="" alt=""></th>
+                        <th><img id="icon2" src="" alt=""></th>
+                        <th><img id="icon3" src="" alt=""></th>
+                        <th><img id="icon4" src="" alt=""></th>
+                        <th><img id="icon5" src="" alt=""></th>
+                      
+                    </tr>
+                    <tr>
+                        <th><span id="forecast1"></span>&#176;F</th>
+                        <th><span id="forecast2"></span>&#176;F</th>
+                        <th><span id="forecast3"></span>&#176;F</th>
+                        <th><span id="forecast4"></span>&#176;F</th>
+                        <th><span id="forecast5"></span>&#176;F</th>
+                    </tr>
+                </table>
+               </div>
 
         </section>
 
@@ -111,7 +104,7 @@
                 <img src="/lesson5b/images/rain-day.png" alt="Main image" class="imagearticle">
             </picture>
             <div>
-                <h3>Climate in Preston</h3>
+                <h3>Climate in Fish Heaven</h3>
                 <p>
                    from Best Places <br>
                     <br>
@@ -180,7 +173,10 @@ Preston gets some kind of precipitation, on average, 99 days per year. Precipita
     <p id="p2">Last Updated: <span id="time"></span></p>
    
 </footer>
-    <script src="/lesson5b/js/ham_menu.js"></script>
-    <script src="/lesson3/js/lastdate.js"></script>
+<script src="/lesson5b/js/ham_menu.js"></script>
+<script src="/lesson3/js/lastdate.js"></script>
+<script src="/lesson11/js/soda_weather.js"></script>
+<script src="/lesson11/js/windChill.js"></script>
+<script src="/lesson11/js/forecast_soda.js"></script>
   </body>
 </html>
