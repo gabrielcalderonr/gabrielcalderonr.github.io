@@ -1,4 +1,4 @@
-const apiForecast="https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=833287fd200c9d39b282d693f69b5816&units=imperial";
+const apiForecast="https://api.openweathermap.org/data/2.5/forecast?id=3652462&APPID=833287fd200c9d39b282d693f69b5816&units=imperial";
 
 fetch(apiForecast)   
 .then((response) => response.json())
@@ -8,7 +8,7 @@ fetch(apiForecast)
     const weatherList = jsObject.list.filter(dt => dt.dt_txt.includes('18:00:00'));
 
      
-    for (let day = 0; day <= 4; day++) {
+    for (let day = 0; day <= 2; day++) {
         let d = new Date(weatherList[day].dt_txt);
         document.getElementById(`day${day+1}`).textContent = dayOfWeek[d.getDay()];
         document.getElementById(`forecast${day+1}`).textContent = Math.round(weatherList[day].main.temp);

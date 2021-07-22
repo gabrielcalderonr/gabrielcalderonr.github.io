@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
 h1, h2, h3, h4, a {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Otomanopee One', sans-serif;
 
 }
 
 p, footer, .content-box {
-    font-family: "Montserrat", sans-serif;
+    font-family:  'Nunito', sans-serif;
 }
 
 body {
@@ -25,9 +25,9 @@ footer {
     padding: 1rem;
     
     text-align: center;
-    background-color:#3575D3;
+    background-color:#520026;
     color: #ffffff;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1rem;
   }
 
@@ -41,7 +41,7 @@ header {
     margin: 15px auto;
     padding: 15px;
     
-    background-color:#3575D3;
+    background-color:#520026;
     text-align: center;
     color: #ffffff;
     font-family: "Arial";
@@ -77,12 +77,13 @@ header p {
 }
 
  li a:hover {
-      background-color: #3575D3;
+      background-color: #d0f4de;
+      color: black;
     }
 
 
 nav {
-    background-color: #3575D3;
+    background-color: #520026;
     margin: 0;
     padding: 0;
 
@@ -97,7 +98,7 @@ nav li a {
 nav ul li {
     padding:10px;
     display: block;
-    background-color: #033e53;
+    background-color: #520026;
 }
 
 
@@ -108,7 +109,7 @@ nav ul li {
 }
 
 .ul li:hover {
-    background:#1eae9a;
+    background:#d0f4de;
     color:white;
   }
 
@@ -138,7 +139,7 @@ padding: 15px;
   }
   
   .box {
-    background: #cacacaca;
+    background: #d0f4de;
   }
   
   .article > h2, p {
@@ -166,7 +167,10 @@ padding: 15px;
   
   }
 .daystitle {
-    background: #cacaca;
+    background: #d0f4de;
 }
  
 
+.table_forecast{
+    font-family: 'Nunito', sans-serif;
+}
