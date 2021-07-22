@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Preston</title>
-    <link  rel="stylesheet" href="/lesson9/css/small.css">
-    <link  rel="stylesheet" href="/lesson9/css/large.css">
-    <link  rel="stylesheet" href="/lesson9/css/medium.css">
-    <link  rel="stylesheet" href="/lesson9/css/normalize.css">
+    <link  rel="stylesheet" href="/final/css/small.css">
+    <link  rel="stylesheet" href="/final/css/large.css">
+    <link  rel="stylesheet" href="/final/css/medium.css">
+    <link  rel="stylesheet" href="/final/css/normalize.css">
     
     
   </head>
@@ -16,51 +16,115 @@
     <header>
   
       <div class="header" >
-      <img class="logo" src="/lesson4/images/Weather-128.png" alt="good weather" width="100">
-      <h1 class="title">The Good Weather</h1> 
+      <img class="logo" src="/final/images/logo_quito.jpg" alt="Quito" width="100">
+      <h1 class="title">Quito Chamber of Commerce</h1> 
      
       
-      <p>Your daily weather site!</p>
+      <p>We grow together</p>
         </div><!-- </div> -->
     </header>
       <nav> 
         <ul class="navigation" id="mainmenu">
             <li><a href="#" onclick="toggleMenu()">&#9776;Menu</a></li>
-            <li><a href="/lesson11/index.html" class="nav">Home</a></li>
-            <li><a href="/lesson11/preston.html" class="nav">Preston</a></li>
-            <li><a href="/lesson11/sodasprings.html" class="nav">Soda Springs</a></li>
-            <li><a href="/lesson11/fishheaven.html" class="nav">Fish Haven</a></li>
-            <li><a href="/lesson11/stormcenter.html" class="nav">Storm Center</a></li>
-            <li><a href="/lesson11/gallery.html" class="nav">Gallery</a></li>
+            <li><a href="/final/index.html" class="nav">Home</a></li>
+            <li><a href="/lesson11/preston.html" class="nav">Quito</a></li>
+            <li><a href="/lesson11/sodasprings.html" class="nav">Join Us</a></li>
+            <li><a href="/lesson11/fishheaven.html" class="nav">Directory</a></li>
+            <li><a href="/lesson11/stormcenter.html" class="nav">Contact</a></li>
+            
       </ul>
     </nav>
     <main>
-        <section id="indexarticle" class="box">
-            <picture>
-                <img src="/lesson9/images/forest2.jpg" alt="Spring" class="main_pic">
-            </picture>
-            <div>
-                <h2>Places and weather</h2>
-                <br>
-                    One of the things I like the most is traveling. 
-                    For me, knowing new places is an experience that I really enjoy. 
-                    Get to know new cultures, people, traditions, food and also the weather. I like going to places where I can enjoy long hours of rain and then go to places with sun and sand. To know how the weather will be in each city, I now have this Good Weather tool. I am sure that I am a user of the page that I created during this course. 
-                </p>
+        <section>
+            
+            <div id="firstsection">
+
+                <picture>
+                    <source srcset="/final/images/quito-large.jpg" media="(min-width: 800px)">
+                    <source srcset="/final/images/quito-medium.jpg" media="(min-width:480px) and (max-width: 799px)">
+                    <source srcset="/final/images/quito-medium.jpg" media="(min-width:10px) and (max-width: 479px)">
+                    <img src="/final/images/quito-small.jpg" alt="Quito" id="heroimage" class= "heroimage">
+                </picture>
+
+                <div id="overlay" class="summary">
+                    <h3>Weather Summary &#9788;</h3>
+                    <div class="details">
+                        <p>Currently: <span id="temperature"></span>&#8457; & <span id="conditions"></span></p>
+                        <p>High Temp: <span id="high"></span>&#8457;</p>
+                        <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                    
+                    </div>
+                </div>
             </div>
         </section>
 
-        <div class="cards"></div>
 
+        
+
+        <div class="events"></div>
+        <h3>Welcome to Quito</h3>
+        <div class="row">
+            <div class="column" style="background-color:#d0f4de;">
+              <h2>Historic</h2>
+              <p><img src="/final/images/historic1.jpg" alt="Historic Quito" class="mainpics"></p>
+            </div>
+            <div class="column" style="background-color:#a9def9;">
+              <h2>Modern</h2>
+              <p><img src="/final/images/modern1.jpg" alt="Modern Quito" class="mainpics"></p>
+            </div>
+            <div class="column" style="background-color:#d0f4de;">
+              <h2>Classic</h2>
+              <p><img src="/final/images/classic1.jpg" alt="Classic Quito" class="mainpics"></p>
+            </div>
+          </div>
+          <section id="hide">
+
+            
+
+            <div id="forecast">
+                <h3>Three Day Forecast</h3>
+                <table class = "table_forecast">
+            
+                    <tr class="days">
+                        <th class="daystitle"><span id="day1"></span></th>
+                        <th class="daystitle"><span id="day2"></span></th>
+                        <th class="daystitle"><span id="day3"></span></th>
+                             </tr>
+                    <tr>
+                        <th><img id="icon1" src="" alt=""></th>
+                        <th><img id="icon2" src="" alt=""></th>
+                        <th><img id="icon3" src="" alt=""></th>
+                        
+                      
+                    </tr>
+                    <tr>
+                        <th><span id="forecast1"></span>&#176;F</th>
+                        <th><span id="forecast2"></span>&#176;F</th>
+                        <th><span id="forecast3"></span>&#176;F</th>
+                        
+                    </tr>
+                </table>
+               </div>
+
+        </section>
+       
         <section class="box" id="bottombox">
-
+                
 
 
             <div id="address">
-                <h4>The Good Weather</h4>
-                <p><img alt="Location Icon" src="/lesson5b/images/location.JPG" class="locationimg" id="location"><br>30 N 1st E <br>
-                    Preston, ID 83263 <br>
-                    555.555.5555 <br>
-                   
+                <h3>Quito, Ecuador</h3>
+
+                <div class="mapouter"><div class="gmap_canvas">
+                    <iframe width="443" height="299" id="gmap_canvas" src="https://maps.google.com/maps?q=quito,%20ecuador&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:299px;width:530px;}</style>
+                <a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:299px;width:443px;}</style></div></div>
+                <h3>Contact</h3>
+                <p>Juan Montalvo y Sucre<br>
+                   <strong>Tel:</strong> +593 998343536<br>
+                    <strong>Email:</strong>info@quitocommerce.com <br>
+                    <br>
                 </p>
 
 
@@ -71,21 +135,13 @@
                             <img alt="Facebook Icon" src="/lesson5b/images/facebook-icon.png">
                         </a>
                     </div>
-                    <div class="icon">
-                        <a target="_blank" href="https://www.pinterest.com">
-                            <img alt="Pinterest Icon" src="/lesson5b/images/pinterest-icon.png">
-                        </a>
-                    </div>
+                    
                     <div class="icon">
                         <a target="_blank" href="https://www.twitter.com">
                             <img alt="Twitter Icon" src="/lesson5b/images/twitter-icon.png">
                         </a>
                     </div>
-                    <div class="icon">
-                        <a target="_blank" href="https://instagram.com">
-                            <img alt="Whatsapp Icon" src="/lesson5b/images/instagram-icon.png">
-                        </a>
-                    </div>
+                  
 
                 </div>
 
@@ -97,18 +153,19 @@
             
 
         </section>
-    
- 
-</main>
+
+    </main>
   
     <footer>
     <p id="p1">&copy; <span id="currentyear">2021</span> | Gabriel Calderon | Quito, Ecuador | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
     <p id="p2">Last Updated: <span id="time"></span></p>
    
 </footer>
-    <script src="/lesson11/js/ham_menu.js"></script>
-    <script src="/lesson11/js/lastdate.js"></script>
-    <script src="/lesson11/js/towndata.js"></script>
-    
+    <script src="/final/js/ham_menu.js"></script>
+    <script src="/final/js/lastdate.js"></script>
+    <script src="/final/js/quito_weather.js"></script>
+    <script src="/final/js/windChill.js"></script>
+    <script src="/final/js/forecast.js"></script>
+
   </body>
 </html>
