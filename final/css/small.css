@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
 
 h1, h2, h3, h4, a {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Otomanopee One', sans-serif;
 
 }
 
 p, footer, .content-box {
-    font-family: "Montserrat", sans-serif;
+    font-family:  'Nunito', sans-serif;
 }
 
 body {
@@ -27,7 +27,7 @@ footer {
     text-align: center;
     background-color:#520026;
     color: #ffffff;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 1rem;
   }
 
@@ -109,7 +109,7 @@ nav ul li {
 }
 
 .ul li:hover {
-    background:#cacaca;
+    background:#d0f4de;
     color:white;
   }
 
@@ -139,7 +139,7 @@ padding: 15px;
   }
   
   .box {
-    background: #cacacaca;
+    background: #d0f4de;
   }
   
   .article > h2, p {
@@ -167,7 +167,10 @@ padding: 15px;
   
   }
 .daystitle {
-    background: #cacaca;
+    background: #d0f4de;
 }
  
 
+.table_forecast{
+    font-family: 'Nunito', sans-serif;
+}
