@@ -73,22 +73,8 @@
       .icon{
         display: grid;
       }
-      .cards {
-  
-        display: flex;
-        flex-flow: row;
-      }
       
-      .section0 {
-        flex: 1 1 auto;  
-      }
-      .section2 {
-        flex: 1 3 auto;  
-       margin-top: auto;
-      }
-      .section6 {
-        flex: 1 2 auto;  
-      }
+      
 }
 @media screen and (max-width: 600px) {
   .column {
@@ -163,6 +149,18 @@ div.reset {
   font-family: 'Nunito', sans-serif;
   
 }
-fieldset{
-width: 75%;
+.cards {
+  
+  display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+flex-direction: row;
+max-height: 100vh;
+}
+.cards img {
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+  max-width: 23vw;
+  position:relative;
 }

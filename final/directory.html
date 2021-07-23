@@ -29,96 +29,15 @@
             <li><a href="/final/index.html" class="nav">Home</a></li>
             <li><a href="/final/quito.html" class="nav">Quito</a></li>
             <li><a href="/final/joinus.html" class="nav">Join Us</a></li>
-            <li><a href="/lesson11/fishheaven.html" class="nav">Directory</a></li>
+            <li><a href="/final/directory.html" class="nav">Directory</a></li>
             <li><a href="/final/contact.html" class="nav">Contact</a></li>
             
       </ul>
     </nav>
     <main>
       
-        <form method="GET" action="thankyou.html">
-            <fieldset style="width:50%">
-                <legend>Contact Information</legend>
-                <div class="form-box">
-                    <label>First name:
-                        <input type="text" minlength="3" name="name" required pattern="[A-z\s]{5,}"></label>
-                </div>
-                <div class="form-box">
-                    <label>Last name:
-                        <input type="text" minlength="3" name="lastname" required pattern="[A-z\s]{5,}"></label>
-                </div>
-                <div class="form-box">
-                    <label>Title:
-                        <input type="text" minlength="3" name="title" required pattern="[A-z\s]{5,}"></label>
-                </div>
-                <div class="form-box">
-                    <label>eMail:
-                        <input type="email" id="email" name="email" placeholder="user@email.org"></label></div>
-                <div class="form-box">
-                    <label>Phone:
-                        <input type="tel" id="phone" name="phone" required></label>
-                </div>
-                <div class="form-box">
-                    <label>Bussiness name:
-                        <input type="text" minlength="3" name="business" required pattern="[A-z\s]{5,}"></label>
-                </div>
-                <div class="form-box">
-                    <label>Bussiness website:
-                        <input type="text" minlength="3" name="business" required></label>
-                </div>
-                <div class="form-box">
-                    <label>Bussiness description:
-                        <input type="text" minlength="3" name="business" required></label>
-                </div>
-               
-
-            </fieldset>
-            <fieldset style="width:50%">
-                <legend>Membership</legend>
-                
-
-                <div class="form-box">
-
-                   Select you membership
-
-                    <label class="radio"><input type="radio" name="choice" value="yes">
-                        Non-profit ($100)</label>
-
-                    <label class="radio"><input type="radio" name="choice" value="yes">
-                        Bronze ($200)</label>
-
-                    <label class="radio"><input type="radio" name="choice" value="yes">
-                        Silver ($400)</label>
-
-                        <label class="radio"><input type="radio" name="choice" value="yes">
-                            Gold ($1000)</label>
-
-                </div>
-                <div class="form-box">
-                    <label>Additional information 
-                        <textarea name="comments" rows="4" cols="10">
-                    </textarea></label>
-                </div>
-                <div class="form-box">
-
-                    <input type="submit" value="Submit">
-                </div>
-            </fieldset>
-        </form>
-
-        <h3>About your Membership</h3>
-            <div class="noticia">
-                <img class="izquierda" src="/final/images/chamber2.jpg" alt="Independence">
-                <aside><h2>Non-profit ($100)</h2> <p> If you belong to a non-profit company you have this inexpensive option but full of contacts and other companies that are in the city. You can interact with them and promote your services.</p>
-                    <h2>Bronze ($200)</h2> <p> You have access to all the local companies but also to a monthly training on inter-institutional relations and business. You can interact with companies that carry out work similar to yours and promote your products or services.</p>
-                    <h2>Silver ($400)</h2> <p> You have all the benefits of the Bronze plan but additional plus two training on finances. Your records will be among the first on the lists and we will help you with the image of your company.</p>
-                    <h2>Gold ($1000)</h2> <p> You have all the benefits of the Silver plan but additionally you will have access to unlimited training. Our team will help you promote your company advising you with your corporate image, design and publications in networks.</p>
-                </aside>
-                
-                
-                <div class="reset"></div>
-              </div>
-        <section class="box" id="bottombox">
+        <div class="cards"></div>
+        
 
         <section class="box" id="bottombox">
                 
@@ -180,6 +99,7 @@
     <script src="/final/js/quito_weather.js"></script>
     <script src="/final/js/windChill.js"></script>
     <script src="/final/js/forecast.js"></script>
+    <script src="/final/js/bussinessdata.js"></script>
 
   </body>
 </html>

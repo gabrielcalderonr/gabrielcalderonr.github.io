@@ -1,0 +1,46 @@
+{
+    "towns": [
+      {
+        "name": "Kushki",
+        "photo": "kushki2.jpg",
+        "yearFounded": "www.kushki.com",
+        "currentPopulation": "Tel: (02) 333-1680"
+      },
+      {
+        "name": "Medianet",
+        "photo": "medianet2.jpg",
+        "yearFounded": "www.medianet.com.ec",
+        "currentPopulation": "Tel: (04) 3814660"
+      },
+      {
+        "name": "Humana",
+        "photo": "humana2.jpg",
+        "yearFounded": "www.humana.med.ec",
+        "currentPopulation": "Tel: (02) 401 7000"
+      },
+      {
+        "name": "Produbanco",
+        "photo": "produbanco1.jpg",
+        "yearFounded": "www.produbanco.com.ec",
+        "currentPopulation": "Tel: 1700 123 123"
+      },
+      {
+        "name": "Educar",
+        "photo": "educar1.jpg",
+        "yearFounded": "www.educar.edu.ec",
+        "currentPopulation": "Tel: 2087-315"
+      },
+      {
+        "name": "Credimatic",
+        "photo": "credimatic1.jpg",
+        "yearFounded": "www.credimaticonline.com",
+        "currentPopulation": "Tel: (04) 232-7660"
+      },
+      {
+        "name": "CNT",
+        "photo": "cnt1.jpg",
+        "yearFounded": "www.cnt.com.ec",
+        "currentPopulation": "Tel: (02) 264-5189"
+      }
+    ]
+  }
